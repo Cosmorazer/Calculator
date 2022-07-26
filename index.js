@@ -8,13 +8,13 @@ const currentOperandTextElement=document.querySelector('[data-curr]')
 
 class Calculator{
     constructor(previousOperandTextElement,currentOperandTextElement){
-        this.previousOperandTextElement=previousOperandTextElement
-        this.currentOperandTextElement=currentOperandTextElement
+        this.previousOperandTextElement = previousOperandTextElement
+        this.currentOperandTextElement = currentOperandTextElement
         this.clear()
     }
     clear(){
-        this.currentOperand=''
-        this.previousOperand=''
+        this.currentOperand= ''
+        this.previousOperand= ''
         this.operation = undefined
     }
     delete(){
@@ -46,11 +46,11 @@ class Calculator{
                 computation = prev - current
                 break
             case '*':
-                computation = prev*current
-                console.log(`Han bhai smh ${computation}`)
+                computation = prev * current
+                break
             case '÷':
                 computation = prev / current
-                console.log(`Han bhai smh ${computation}`)
+                break
             default:
                 return
         }
@@ -78,8 +78,8 @@ class Calculator{
     }
     updateDisplay(){
         this.currentOperandTextElement.innerText = 
-        this.getDisplayNumber(this.currentOperand)
-        if(this.operation != null){
+            this.getDisplayNumber(this.currentOperand)
+        if (this.operation != null){
             this.previousOperandTextElement.innerText = 
             `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`
         } else {
