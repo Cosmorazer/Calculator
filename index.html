@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator ❤️</title>
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body class="p-0 m-0 bg-blue-300 font-sans">
+      <div class="calculator grid justify-center grid-cols-4 grid-rows-7 p-10">
+
+        <div data-hist class="historybar col-span-4 bg-slate-700 text-2xl text-slate-400 flex items-end flex-row-reverse p-5"></div>
+        <div data-curr class="currentbar col-span-4 bg-slate-700 text-4xl text-white flex items-end flex-row-reverse p-5 overflow-auto"></div>
+
+        <button class="col-span-2 border text-2xl bg-slate-300 hover:bg-slate-200" data-clr>AC</button>
+        <button class="border text-2xl bg-slate-300 hover:bg-slate-200" data-dlt>DEL</button>
+        <button class="border text-2xl bg-slate-300 hover:bg-slate-200" data-operator>÷</button>
+        <button class="border text-2xl bg-slate-300 hover:bg-slate-200" data-number>1</button>
+        <button class="border text-2xl bg-slate-300 hover:bg-slate-200" data-number>2</button>
+        <button class="border text-2xl bg-slate-300 hover:bg-slate-200" data-number>3</button>
+        <button class="border text-2xl bg-slate-300 hover:bg-slate-200" data-operator>*</button>
+        <button class="border text-2xl bg-slate-300 hover:bg-slate-200" data-number>4</button>
+        <button class="border text-2xl bg-slate-300 hover:bg-slate-200" data-number>5</button>
+        <button class="border text-2xl bg-slate-300 hover:bg-slate-200" data-number>6</button>
+        <button class="border text-2xl bg-slate-300 hover:bg-slate-200" data-operator>+</button>
+        <button class="border text-2xl bg-slate-300 hover:bg-slate-200" data-number>7</button>
+        <button class="border text-2xl bg-slate-300 hover:bg-slate-200" data-number>8</button>
+        <button class="border text-2xl bg-slate-300 hover:bg-slate-200" data-number>9</button>
+        <button class="border text-2xl bg-slate-300 hover:bg-slate-200" data-operator>-</button>
+        <button class="col-span-2 border text-2xl bg-slate-300 hover:bg-slate-200" data-number>0</button>
+        <button class="border  text-2xl bg-slate-300 hover:bg-slate-200" data-number>.</button>
+        <button class="border text-2xl bg-slate-300 hover:bg-slate-200" data-equalto>=</button>
+      </div>
+    <script src="index.js"></script>
+  </body>
+</html>
